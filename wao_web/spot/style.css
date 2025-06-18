@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: repeating-linear-gradient(
+    -45deg,
+    #dfdfdf,
+    #dfdfdf 30px,
+    #d9d9d9 30px,
+    #d9d9d9 60px
+  );
+  background-size: auto;
+  font-size: 1em;
+  font-weight: 200;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #333333;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  margin: 0 auto 44px;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0.8); /* ヘッダーの背景を半透明に */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.headLogo {
+  flex: 1;
+}
+.headLogo img {
+  height: 90px;
+  padding-left: 2rem;
+}
+.menuArea {
+  display: flex;
+  flex: 2;
+  justify-content: right;
+  padding-bottom: 0.8em;
+  list-style: none;
+  font-size: 3vmin;
+}
+
+.btn--head,
+a.btn--head {
+  color: #414141;
+  background-color: #fff;
+  padding: 5px 5px 5px 5px;
+  border: 3px solid #414141;
+  font-size: 2vmin;
+  text-decoration: none;
+  display: inline-block;
+}
+.btn--head:hover,
+a.btn--head:hover {
+  color: #fff;
+  background-color: #414141;
+  padding: 5px 5px 5px 5px;
+  border: 3px solid #fff;
+  font-size: 2vmin;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0px 10px;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #414141;
+}
+
+main {
+  padding: 20px 40px; /* 全体のパディングを調整 */
+}
+
+/* 共通のセクションタイトル */
+.section-title {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 3em;
+  text-align: center;
+  color: #fff; /* タイトル文字色を白に */
+  margin-bottom: 40px;
+  background-color: #92e023; /* 背景色 */
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* 影を追加 */
+}
+
+.spot-intro {
+  background-color: #414141;
+  color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 60px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.intro-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.intro-text-box {
+  flex: 1;
+  min-width: 300px;
+}
+
+.intro-text-box h3 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 2.5em;
+  color: #92e023;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.intro-text-box p {
+  font-size: 1.3em;
+  line-height: 1.8;
+}
+
+.map-container {
+  flex: 1;
+  min-width: 100px;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 15px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.japan-map-img {
+  width: 70%;
+  height: auto;
+  display: block;
+  align-items: center;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.spot-details {
+  padding: 40px 0;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+}
+
+.detail-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-card h4 {
+  font-family: "Dela Gothic One", sans-serif;
+  font-size: 1.5em;
+  color: #92e023;
+  margin-bottom: 15px;
+}
+
+.detail-description {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.card-image-wrapper {
+  width: 100%;
+  max-width: 250px;
+  margin-bottom: 20px;
+  border: 5px solid #333333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.access-info {
+  text-align: left;
+  width: 100%;
+  font-size: 0.95em;
+  line-height: 1.5;
+  color: #555555;
+  margin-top: auto; /* 下に配置 */
+}
+
+.access-info span {
+  font-weight: bold;
+  color: #333333;
+}
+
+.link {
+  color: #92e023;
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 20px;
+  }
+  .navContainer {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+  .headLogo img {
+    height: 70px;
+    padding-left: 0;
+  }
+  .menuArea {
+    justify-content: center;
+    padding-bottom: 0;
+    font-size: 4vmin;
+  }
+  .menuArea li {
+    margin: 0 10px;
+  }
+  .btn--head,
+  a.btn--head {
+    font-size: 2.5vmin;
+  }
+  .section-title {
+    font-size: 2em;
+    padding: 8px 20px;
+  }
+  main {
+    padding: 10px 20px;
+  }
+  .intro-content {
+    flex-direction: column; /* スマホで縦並び */
+    gap: 20px;
+  }
+  .spot-intro {
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  .intro-text-box h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+  }
+  .detail-grid {
+    grid-template-columns: 1fr; /* スマホで1列 */
+    gap: 30px;
+  }
+  .detail-card {
+    padding: 20px;
+  }
+}

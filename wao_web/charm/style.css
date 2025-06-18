@@ -1,0 +1,271 @@
+@charset "utf-8";
+
+.m-plus-rounded-1c-regular {
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background: repeating-linear-gradient(
+    -45deg,
+    #dfdfdf,
+    #dfdfdf 30px,
+    #d9d9d9 30px,
+    #d9d9d9 60px
+  );
+  background-size: auto;
+  font-size: 1em;
+  font-weight: 200;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  color: #333333;
+}
+
+main {
+  padding: 0 40px;
+  scroll-snap-type: y mandatory; /* セクションごとにスナップ */
+  overflow-y: scroll; /* スクロール可能にする */
+  height: 100vh; /* ビューポートの高さに合わせる */
+}
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* ヘッダーが他の要素の上に表示されるようにする */
+}
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* ヘッダーに影を追加 */
+}
+
+.headLogo {
+  flex: 1;
+}
+.headLogo img {
+  height: 90px;
+  padding-left: 2rem;
+}
+.menuArea {
+  display: flex;
+  flex: 2;
+  justify-content: right;
+  padding-bottom: 0.8em;
+  list-style: none;
+  font-size: 3vmin;
+}
+
+.btn--head,
+a.btn--head {
+  color: #414141;
+  background-color: #fff;
+  padding: 5px 5px 5px 5px;
+  border: 3px solid #414141;
+  font-size: 2vmin;
+  text-decoration: none; /* 下線を削除 */
+  display: inline-block; /* パディングが適用されるように */
+}
+.btn--head:hover,
+a.btn--head:hover {
+  color: #fff;
+  background-color: #414141;
+  padding: 5px 5px 5px 5px;
+  border: 3px solid #fff;
+  font-size: 2vmin;
+}
+
+a.btn--radius {
+  border-radius: 100vh;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  padding: 12px 0px 10px;
+}
+header nav ul li {
+  margin: 0 20px;
+}
+header nav ul li a {
+  font-size: 22px;
+  font-weight: bold;
+  color: #414141;
+}
+
+section {
+  padding: 60px 0;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); /* 影 */
+  padding: 20px;
+}
+
+.section-title {
+  font-family: "Dela Gothic One", sans-serif; /* 画像のフォントに合わせて調整 */
+  font-size: 3em;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 40px;
+  position: relative;
+  display: inline-block;
+  padding: 0 20px;
+  left: 20%;
+  transform: translateX(-50%);
+  background-color: #f18d9e;
+  border-radius: 10px;
+  color: #414141;
+}
+
+.p-area {
+  height: 200px; /* 固定の高さ */
+  overflow-y: auto; /* スクロールバー */
+  padding-right: 15px; /* スクロールバーのための余白 */
+}
+.habit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.habit-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap; /* 小さい画面で折り返す */
+}
+
+.habit-item {
+  width: 45%; /* 左右に並べる */
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.habit-item h3 {
+  font-family: "Dela Gothic One", sans-serif; /* 画像のフォントに合わせて調整 */
+  font-size: 2.5em;
+  color: #f18d9e;
+  margin-bottom: 20px;
+}
+
+.habit-item .item-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.habit-item img {
+  width: 100%;
+  max-width: 500px; /* 画像の最大幅 */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  border: 5px solid #333333;
+}
+
+.habit-item .text-box {
+  background-color: #414141;
+  color: #fff;
+  border-radius: 16px;
+  border: 5px solid #333333;
+  padding: 20px;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+  text-align: left;
+  line-height: 1.8;
+  width: 90%; /* テキストボックスの幅 */
+  max-width: 500px;
+}
+
+/* ワオキツネザルの魅力セクション */
+.charmPoint {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.charm-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2列 */
+  gap: 40px; /* グリッド間のスペース */
+  max-width: 900px; /* グリッドの最大幅 */
+  margin: 0 auto; /* 中央寄せ */
+}
+
+.charm-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.charm-item img {
+  width: 100%;
+  max-width: 250px; /* 画像の最大幅 */
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  border: 5px solid #333333;
+}
+
+.charm-item p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  color: #333333;
+}
+
+.charm-item .large-charm-img {
+  max-width: 300px; /* 他の画像より大きくする */
+}
+
+/* レスポンシブデザイン */
+@media (max-width: 768px) {
+  main {
+    padding: 0 20px;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .headLogo img {
+    height: 70px;
+    padding-left: 0;
+  }
+
+  .menuArea {
+    justify-content: center;
+    padding-bottom: 0;
+    font-size: 4vmin;
+  }
+
+  .menuArea li {
+    margin: 0 10px;
+  }
+
+  .btn--head,
+  a.btn--head {
+    font-size: 2.5vmin;
+  }
+
+  .section-title {
+    font-size: 2em;
+  }
+
+  .habit-item {
+    width: 90%; /* スマホで1列にする */
+  }
+
+  .habit-item h3 {
+    font-size: 1.8em;
+  }
+
+  .charm-grid {
+    grid-template-columns: 1fr; /* スマホで1列にする */
+  }
+}
