@@ -305,3 +305,36 @@ article section p {
 article section {
   margin-bottom: 50px;
 }
+
+@media (max-width: 768px) {
+  main {
+    padding: 0 20px;
+  }
+
+  .navContainer {
+    flex-direction: column;
+    padding-bottom: 10px;
+  }
+
+  .headLogo img {
+    height: 70px;
+    padding-left: 0;
+  }
+
+  .menuArea {
+    justify-content: center;
+    padding-bottom: 0;
+    font-size: 4vmin;
+  }
+
+  .menuArea li {
+    margin: 0 10px;
+  }
+
+  .btn--head,
+  a.btn--head {
+    font-size: 2.5vmin;
+  }
+
+ 
+}

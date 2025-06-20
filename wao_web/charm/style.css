@@ -2,7 +2,7 @@
 
 .m-plus-rounded-1c-regular {
   font-family: "M PLUS Rounded 1c", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -105,8 +105,9 @@ section {
   padding: 20px;
 }
 
+
 .section-title {
-  font-family: "Dela Gothic One", sans-serif; /* 画像のフォントに合わせて調整 */
+  font-family: "Dela Gothic One", sans-serif; 
   font-size: 3em;
   text-align: center;
   color: #333333;
@@ -122,9 +123,9 @@ section {
 }
 
 .p-area {
-  height: 200px; /* 固定の高さ */
-  overflow-y: auto; /* スクロールバー */
-  padding-right: 15px; /* スクロールバーのための余白 */
+  height: 200px; 
+  overflow-y: auto; 
+  padding-right: 15px; 
 }
 .habit {
   display: flex;
@@ -182,9 +183,9 @@ section {
   max-width: 500px;
 }
 
-/* ワオキツネザルの魅力セクション */
+
 .charmPoint {
-  padding: 60px 0;
+  padding: 60px 30px;
   text-align: center;
 }
 
@@ -219,10 +220,9 @@ section {
 }
 
 .charm-item .large-charm-img {
-  max-width: 300px; /* 他の画像より大きくする */
+  max-width: 300px; 
 }
 
-/* レスポンシブデザイン */
 @media (max-width: 768px) {
   main {
     padding: 0 20px;
